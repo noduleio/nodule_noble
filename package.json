@@ -1,0 +1,38 @@
+{
+  "name": "nodule_noble",
+  "version": "1.0.0",
+  "description": "Command line client for nodule.io",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./lib/start.js | bunyan",
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile",
+    "test": "mocha --compilers js:babel/register --reporter spec",
+    "test-continuous": "mocha --compilers js:babel/register --watch --reporter spec",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noduleio/nodule_noble.git"
+  },
+  "author": "CMG Research Ltd",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/noduleio/nodule_noble/issues"
+  },
+  "homepage": "https://github.com/noduleio/nodule_noble#readme",
+  "dependencies": {
+    "bunyan": "^1.4.0",
+    "lodash": "^3.10.1",
+    "noble": "^1.1.0",
+    "uuid": "^2.0.1",
+    "websocketrpc": "noduleio/websocketrpc"
+  },
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "babel-eslint": "^4.0.10",
+    "chai": "^3.2.0",
+    "eslint": "^1.2.0",
+    "mocha": "^2.2.5"
+  }
+}

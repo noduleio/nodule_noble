@@ -1,0 +1,18 @@
+{
+  // I want to use babel-eslint for parsing!
+  "parser": "babel-eslint",
+  "env": {
+    "node": true
+  },
+  "plugins": [
+  ],
+  "ecmaFeatures": {
+      "module": true
+  },
+  // To give you an idea how to override rule options:
+  "rules": {
+    "no-underscore-dangle": [0],
+    "quotes": 0,
+    "strict": [2, "never"]
+  }
+}
