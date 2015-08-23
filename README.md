@@ -78,7 +78,7 @@ Now proceed with the normal install instructions.
 
 Out of the box support on windows for Bluetooth dongles is not very good.
 
-You will need a space Bluetooth4.0 dongle that you can use for nodule.
+You will need a spare Bluetooth4.0 dongle that you can use for nodule.
 
 Then follow the instructions [here](https://github.com/sandeepmistry/noble#windows) to get the prerequisites for noble installed.
 
